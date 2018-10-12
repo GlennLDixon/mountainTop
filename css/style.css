@@ -28,3 +28,8 @@ body {
     background-attachment: fixed;
     color: rgb(255, 255, 255);
 }
+
+.head-quote {
+    margin-top: 50%;
+    float: right;
+}
