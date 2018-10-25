@@ -39,6 +39,12 @@ body {
     float: right;
 }
 
+.mount-img {
+    border: 1px solid red;
+    width: 75%;
+    height: 50%;
+}
+
 /* h1 {
     top: 50%;
     margin: 0;
