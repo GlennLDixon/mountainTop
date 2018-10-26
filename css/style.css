@@ -27,6 +27,11 @@ body {
 #info{
     background-color: #98C1D9;
     margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+#mountains {
+    text-align: center;
 }
 
 .navbar-default {
@@ -56,7 +61,7 @@ body {
 }
 
 .mount-img {
-    width: 500px;
+    width: 475px;
     height: 300px;
     margin-top: 10px;
 }
