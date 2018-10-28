@@ -64,8 +64,16 @@ body {
     width: 475px;
     height: 300px;
     margin-top: 10px;
+    box-shadow: -12px 13px 30px -10px black;
 }
 
+.list-inline {
+    text-align: center;
+}
+
+ul.list-inline li {
+    display: inline;
+}
 /* h1 {
     top: 50%;
     margin: 0;
