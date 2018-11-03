@@ -1,35 +1,33 @@
-$heading-font: 'Carter One', cursive;
-$paragraph-font: 'Lato', sans-serif;
+$head-font: 'Carter One', cursive;
+$alt-head-font: 'Bungee', cursive;
+$para-font: 'Lato', sans-serif;
+$alt-para-font: 'Pragati Narrow', sans-serif;
 $primary-color: #70a10d;
 $secondary-color: rgb(143, 175, 214);
 $alt-color: rgb(242, 242, 242);
 
 body {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: $para-font;
     font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     color: rgb(51, 51, 51);
     background-color: rgb(255, 255, 255);
 }
 
-#page-wrap {
-    width: 800px;
-    margin: 0 auto;
+.heading{
+    font-family: $alt-head-font;
+
 }
 
-#info {
-    background-color: #98C1D9;
-    margin-top: -30px;
-    margin-bottom: 10px;
-}
-
-#mountains {
-    text-align: center;
-}
 
 .navbar-default {
-    background-color: rgb(248, 248, 248);
+    background-color: transparent;
+}
+
+.brand-name{
+    font-family: $head-font;
+    font-size: 3rem;
 }
 
 .jumbotron {
@@ -49,10 +47,37 @@ body {
     float: right;
 }
 
+#info-plane {
+    margin-top: -25px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.info-icon {
+    float: left;
+    margin-top: 5px;
+    padding-right: 5px;
+    color: $secondary-color;
+}
+
+#info-plane p {
+    font-size: 1em;
+    font-family: $para-font;
+    padding-bottom: 5px;
+}
+
 .left-col {
     margin-left: 5px;
     vertical-align: middle;
 }
+
+///// MOUNTAIN SECTION /////
+
+#mountains {
+    text-align: center;
+    background: $alt-color;
+    margin-top: 15px;
+    }
 
 .mount-img {
     width: 475px;
@@ -68,6 +93,18 @@ body {
 ul.list-inline li {
     display: inline;
 }
+
+//////// ABOUT US SECTION ///////
+
+#about-us{
+ height: 70vh;
+ width: 100%;
+ background: url(../img/transparent-mount.png) center no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ color: rgb(255, 255, 255);
+}
+
 
 .register-wrap {
     margin-top: 25px;
