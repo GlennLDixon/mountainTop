@@ -1,3 +1,48 @@
+// Screen size variables
+$screen-xs-min: 425px; // Tiny phones
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 768px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
+// Mixins
+
+// Tiny devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+
 $head-font: 'Carter One', cursive;
 $alt-head-font: 'Bungee', cursive;
 $para-font: 'Lato', sans-serif;
@@ -5,6 +50,7 @@ $alt-para-font: 'Pragati Narrow', sans-serif;
 $primary-color: #70a10d;
 $secondary-color: rgb(143, 175, 214);
 $alt-color: rgb(242, 242, 242);
+
 
 body {
     font-family: $para-font;
@@ -16,11 +62,7 @@ body {
     box-sizing: border-box;
 }
 
-.inform {
-    font-family: $para-font !important;
-    font-size: 14px !important;
-    font-style: italic !important;
-}
+/////////// Jumbotron ///////////
 
 .heading {
     font-family: $alt-head-font;
@@ -51,9 +93,11 @@ body {
     background-color: #fff;
     color: rgb(0, 0, 0);
     margin-top: 35%;
-    margin-right: -5%;
+    margin-right: -20%;
     float: right;
 }
+
+//////// Info Bar /////////
 
 #info-plane {
     margin-top: -25px;
@@ -68,10 +112,10 @@ body {
     color: $secondary-color;
 }
 
-#info-plane p {
-    font-size: 1em;
-    font-family: $para-font;
-    padding-bottom: 5px;
+.inform {
+    font-family: $para-font !important;
+    font-size: 14px !important;
+    font-style: italic !important;
 }
 
 .left-col {
@@ -113,10 +157,12 @@ ul.list-inline li {
  color: rgb(255, 255, 255);
 }
 
+/////// Input Section ///////
 .img img {
     width: 100%;
 }
-    .register-block {
+
+.register-block {
     border: 1px solid red;
 }
 
@@ -134,14 +180,5 @@ input {
     border: 1px solid red;
 }
 
-/* h1 {
-    top: 50%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 4em;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow: 0 5px 10px rgba(0,0,0,1);
-    mix-blend-mode: overlay;
-} */
+@media 
+
