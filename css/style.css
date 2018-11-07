@@ -1,43 +1,109 @@
-/*
-Error: Invalid CSS after "@media": expected media query (e.g. print, screen, print and screen), was ""
-        on line 185 of scss/style.scss
+div {
+  width: 100%; }
 
-180:     border: 1px solid red;
-181: }
-182: 
-183: @media
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  color: #333333;
+  background-color: white;
+  box-sizing: border-box; }
 
-Backtrace:
-scss/style.scss:185
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1188:in `expr!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:421:in `media_directive'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:234:in `special_directive'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:209:in `directive'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@media\": expected media query (e.g. print, screen, print and screen), was \"\"\A         on line 185 of scss/style.scss\A \A 180:     border: 1px solid red;\A 181: }\A 182: \A 183: @media"; }
+.heading {
+  font-family: "Bungee", cursive;
+  font-size: 35px; }
+
+.navbar-default {
+  background-color: transparent; }
+
+.brand-name {
+  font-family: "Carter One", cursive;
+  font-size: 3rem;
+  float: left; }
+
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/random-mountains.jpg) center no-repeat #1b222a;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white; }
+
+.head-quote {
+  background-color: #fff;
+  color: black;
+  margin-top: 35%;
+  margin-right: -25%;
+  float: right; }
+
+@media only screen and (min-width: 992px) {
+  .head-quote {
+    background-color: #fff;
+    color: black;
+    margin-top: 35%;
+    margin-right: -10%;
+    float: right; } }
+#info-plane {
+  margin-top: -25px;
+  margin-bottom: 25px;
+  padding-bottom: 15px; }
+
+.info-icon {
+  float: left;
+  margin-top: 5px;
+  padding-right: 5px;
+  color: #8fafd6; }
+
+.inform {
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px !important;
+  font-style: italic !important; }
+
+.left-col {
+  margin-left: 5px;
+  vertical-align: middle; }
+
+#mountains {
+  text-align: center;
+  background: #f2f2f2;
+  margin-top: 15px; }
+
+.mount-img {
+  width: 475px;
+  height: 300px;
+  margin-top: 10px;
+  box-shadow: -12px 13px 30px -10px black; }
+
+.list-inline {
+  text-align: center; }
+
+ul.list-inline li {
+  display: inline; }
+
+#about-us {
+  height: 70vh;
+  width: 100%;
+  background: url(../img/transparent-mount.png) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white; }
+
+.img img {
+  width: 100%; }
+
+.register-block {
+  border: 1px solid red; }
+
+.register-wrap {
+  margin-top: 25px; }
+
+input {
+  height: 35px;
+  margin: 10px 5px; }
+
+.name {
+  width: 250px;
+  border: 1px solid red; }
+
+/*# sourceMappingURL=style.css.map */
