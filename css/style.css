@@ -14,8 +14,9 @@ body {
   font-family: "Bungee", cursive;
   font-size: 35px; }
 
-.navbar-default {
-  background-color: transparent; }
+.navbar {
+  background-color: transparent;
+  border-bottom: none; }
 
 .brand-name {
   font-family: "Carter One", cursive;
@@ -35,15 +36,9 @@ body {
   color: black;
   margin-top: 35%;
   margin-right: -25%;
-  float: right; }
+  float: right;
+  border-radius: 10px; }
 
-@media only screen and (min-width: 992px) {
-  .head-quote {
-    background-color: #fff;
-    color: black;
-    margin-top: 35%;
-    margin-right: -10%;
-    float: right; } }
 #info-plane {
   margin-top: -25px;
   margin-bottom: 25px;
@@ -105,5 +100,28 @@ input {
 .name {
   width: 250px;
   border: 1px solid red; }
+
+@media only screen and (max-width: 576px) {
+  .head-quote {
+    display: none; } }
+@media only screen and (max-width: 768px) {
+  .head-quote {
+    background-color: #fff;
+    color: black;
+    margin-top: 100%;
+    margin-right: -10%;
+    float: right;
+    border-radius: 10px; }
+
+  .head-quote h1 {
+    font-family: "Carter One", cursive;
+    font-size: 2em;
+    text-align: center; }
+
+  .head-quote p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 5px; } }
 
 /*# sourceMappingURL=style.css.map */
