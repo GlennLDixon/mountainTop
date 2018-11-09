@@ -120,7 +120,29 @@ input {
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     text-align: center;
-    padding: 5px 5px; } }
+    padding: 5px 5px; }
+
+  #mountains {
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 15px; }
+
+  .mount-img {
+    width: 375px;
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: -12px 13px 30px -10px black; }
+
+  .heading {
+    font-size: 1.7em; }
+
+  #about-us {
+    height: 70vh;
+    width: 100%;
+    background: url(../img/transparent-mount.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white; } }
 @media only screen and (max-width: 768px) {
   .head-quote {
     background-color: #fff;
@@ -139,12 +161,34 @@ input {
     font-family: "Lato", sans-serif;
     font-size: 1em;
     text-align: center;
-    padding: 5px 5px; } }
+    padding: 5px 5px; }
+
+  #mountains {
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 15px; }
+
+  .mount-img {
+    width: 450px;
+    height: 250px;
+    margin-top: 10px;
+    box-shadow: -12px 13px 30px -10px black; }
+
+  .heading {
+    font-size: 1.7em; }
+
+  #about-us {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/transparent-mount.png) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white; } }
 @media only screen and (max-width: 992px) {
   .head-quote {
     background-color: #fff;
     color: black;
-    margin-top: 800%;
+    margin-top: 50%;
     margin-right: 5%;
     float: right;
     border-radius: 10px; }
