@@ -1,43 +1,43 @@
 // Screen size variables
-$screen-xs-min: 425px; // Tiny phones
-$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
-$screen-md-min: 768px; // Small tablets (portrait view)
-$screen-lg-min: 992px; // Tablets and small desktops
-$screen-xl-min: 1200px; // Large tablets and desktops
+$screen-xs-max: 425px; // Tiny phones
+$screen-sm-max: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-max: 768px; // Small tablets (portrait view)
+$screen-lg-max: 992px; // Tablets and small desktops
+$screen-xl-max: 1200px; // Large tablets and desktops
 
 // Mixins
 
 // Tiny devices
 @mixin xs {
-    @media only screen and (max-width: #{$screen-xs-min}) {
+    @media only screen and (max-width: #{$screen-xs-max}) {
         @content;
     }
 }
 
 // Small devices
 @mixin sm {
-    @media only screen and (max-width: #{$screen-sm-min}) {
+    @media only screen and (max-width: #{$screen-sm-max}) {
         @content;
     }
 }
 
 // Medium devices
 @mixin md {
-    @media only screen and (max-width: #{$screen-md-min}) {
+    @media only screen and (max-width: #{$screen-md-max}) {
         @content;
     }
 }
 
 // Large devices
 @mixin lg {
-    @media only screen and (max-width: #{$screen-lg-min}) {
+    @media only screen and (max-width: #{$screen-lg-max}) {
         @content;
     }
 }
 
 // Extra large devices
 @mixin xl {
-    @media only screen and (max-width: #{$screen-xl-min}) {
+    @media only screen and (max-width: #{$screen-xl-max}) {
         @content;
     }
 }
@@ -53,6 +53,7 @@ $alt-color: rgb(242, 242, 242);
 
 div {
     width: 100%;
+    border: 1px solid red;
 }
 
 body {
@@ -167,6 +168,10 @@ ul.list-inline li {
  color: rgb(255, 255, 255);
 }
 
+.heading {
+    
+}
+
 /////// Input Section ///////
 .img img {
     width: 100%;
@@ -192,10 +197,30 @@ input {
 
 
 // Media Queries
+@include xs {
+    .head-quote {
+        display: none;
+    }
+}
 
 @include sm {
     .head-quote {
-        display: none;
+        margin-top: 25%;
+        margin-right: -20px;
+        float: right;
+    }
+
+    .head-quote h1 {
+        font-family: $head-font;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .head-quote p {
+        font-family: $para-font;
+        font-size: 1rem;
+        text-align: center;
+        padding: 5px 5px;
     }
 }
 
@@ -204,7 +229,7 @@ input {
         background-color: #fff;
         color: rgb(0, 0, 0);
         margin-top: 100%;
-        margin-right: -10%;
+        margin-right: -15%;
         float: right;
         border-radius: 10px;
     }
@@ -215,6 +240,54 @@ input {
         text-align: center;
     }
     
+    .head-quote p {
+        font-family: $para-font;
+        font-size: 1em;
+        text-align: center;
+        padding: 5px 5px;
+    }
+}
+
+@include lg {
+    .head-quote {
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        margin-top: 800%;
+        margin-right: 5%;
+        float: right;
+        border-radius: 10px;
+    }
+
+    .head-quote h1 {
+        font-family: $head-font;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .head-quote p {
+        font-family: $para-font;
+        font-size: 1em;
+        text-align: center;
+        padding: 5px 5px;
+    }
+}
+
+@include xl {
+    .head-quote {
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        margin-top: 50%;
+        margin-right: 5%;
+        float: right;
+        border-radius: 10px;
+    }
+
+    .head-quote h1 {
+        font-family: $head-font;
+        font-size: 10px;
+        text-align: center;
+    }
+
     .head-quote p {
         font-family: $para-font;
         font-size: 1em;

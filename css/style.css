@@ -1,5 +1,6 @@
 div {
-  width: 100%; }
+  width: 100%;
+  border: 1px solid red; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -101,21 +102,75 @@ input {
   width: 250px;
   border: 1px solid red; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 425px) {
   .head-quote {
     display: none; } }
+@media only screen and (max-width: 576px) {
+  .head-quote {
+    margin-top: 25%;
+    margin-right: -20px;
+    float: right; }
+
+  .head-quote h1 {
+    font-family: "Carter One", cursive;
+    font-size: 1rem;
+    text-align: center; }
+
+  .head-quote p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px 5px; } }
 @media only screen and (max-width: 768px) {
   .head-quote {
     background-color: #fff;
     color: black;
     margin-top: 100%;
-    margin-right: -10%;
+    margin-right: -15%;
     float: right;
     border-radius: 10px; }
 
   .head-quote h1 {
     font-family: "Carter One", cursive;
     font-size: 2em;
+    text-align: center; }
+
+  .head-quote p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 5px; } }
+@media only screen and (max-width: 992px) {
+  .head-quote {
+    background-color: #fff;
+    color: black;
+    margin-top: 800%;
+    margin-right: 5%;
+    float: right;
+    border-radius: 10px; }
+
+  .head-quote h1 {
+    font-family: "Carter One", cursive;
+    font-size: 10px;
+    text-align: center; }
+
+  .head-quote p {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 5px; } }
+@media only screen and (max-width: 1200px) {
+  .head-quote {
+    background-color: #fff;
+    color: black;
+    margin-top: 50%;
+    margin-right: 5%;
+    float: right;
+    border-radius: 10px; }
+
+  .head-quote h1 {
+    font-family: "Carter One", cursive;
+    font-size: 10px;
     text-align: center; }
 
   .head-quote p {
