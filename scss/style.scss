@@ -53,7 +53,6 @@ $alt-color: rgb(242, 242, 242);
 
 div {
     width: 100%;
-    border: 1px solid red;
 }
 
 body {
@@ -83,7 +82,6 @@ body {
     font-family: $head-font;
     font-size: 3rem;
     float: left;
-
 }
     
 
@@ -94,8 +92,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: rgb(255, 255, 255);
-
-
 }
 
 .head-quote {
@@ -159,7 +155,7 @@ ul.list-inline li {
 
 //////// ABOUT US SECTION ///////
 
-#about-us{
+#info-box {
  height: 70vh;
  width: 100%;
  background: url(../img/transparent-mount.png) center no-repeat;
@@ -168,13 +164,18 @@ ul.list-inline li {
  color: rgb(255, 255, 255);
 }
 
+.about-us, .safety-first {
+    border-left: 2px solid black;
+    padding-left: 5px;
+}
+
+.info{
+    margin-top: 20%;
+}
+
 /////// Input Section ///////
 .img img {
     width: 100%;
-}
-
-.register-block {
-    border: 1px solid red;
 }
 
 .register-wrap {
@@ -188,7 +189,6 @@ input {
 
 .name {
     width: 250px;
-    border: 1px solid red;
 }
 
 

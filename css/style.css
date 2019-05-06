@@ -1,6 +1,5 @@
 div {
-  width: 100%;
-  border: 1px solid red; }
+  width: 100%; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -77,7 +76,7 @@ body {
 ul.list-inline li {
   display: inline; }
 
-#about-us {
+#info-box {
   height: 70vh;
   width: 100%;
   background: url(../img/transparent-mount.png) center no-repeat;
@@ -85,11 +84,15 @@ ul.list-inline li {
   background-attachment: fixed;
   color: white; }
 
+.about-us, .safety-first {
+  border-left: 2px solid black;
+  padding-left: 5px; }
+
+.info {
+  margin-top: 20%; }
+
 .img img {
   width: 100%; }
-
-.register-block {
-  border: 1px solid red; }
 
 .register-wrap {
   margin-top: 25px; }
@@ -99,8 +102,7 @@ input {
   margin: 10px 5px; }
 
 .name {
-  width: 250px;
-  border: 1px solid red; }
+  width: 250px; }
 
 @media only screen and (max-width: 425px) {
   .head-quote {
