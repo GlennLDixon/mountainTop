@@ -16,15 +16,18 @@ body {
 
 .navbar {
   background-color: transparent;
-  border-bottom: none; }
+  border-bottom: none;
+  color: white; }
 
-.brand-name {
+a.brand-name.brand-name {
   font-family: "Carter One", cursive;
-  font-size: 3rem;
-  float: left; }
+  font-size: 4rem;
+  float: left;
+  color: white;
+  margin-top: 1.5%; }
 
 .jumbotron {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background: url(../img/random-mountains.jpg) center no-repeat #1b222a;
   background-size: cover;
@@ -34,7 +37,7 @@ body {
 .head-quote {
   background-color: #fff;
   color: black;
-  margin-top: 35%;
+  margin-top: 25%;
   margin-right: -25%;
   float: right;
   border-radius: 10px; }
