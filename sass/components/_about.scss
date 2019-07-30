@@ -1,0 +1,22 @@
+#info-box {
+ height: 70vh;
+ width: 100%;
+//  background: url(../img/transparent-mount.png) center no-repeat;
+//  background-size: cover;
+//  background-attachment: fixed;
+//  color: rgb(255, 255, 255);
+}
+
+.heading {
+    text-align: center;
+
+}
+
+.about-us, .safety-first {
+    border-left: 2px solid black;
+    padding-left: 5px;
+}
+
+.info{
+    margin-top: 20%;
+}
