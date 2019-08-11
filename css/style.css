@@ -1,88 +1,3 @@
-div {
-  width: 100%; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: 1.5px;
-  color: #333333;
-  background-color: white;
-  box-sizing: border-box; }
-
-.heading {
-  font-family: "Bungee", cursive;
-  font-size: 35px; }
-
-.navbar {
-  background-color: transparent;
-  border-bottom: none; }
-
-.brand-name {
-  font-family: "Carter One", cursive;
-  font-size: 3rem;
-  float: left; }
-
-.jumbotron {
-  height: 100vh;
-  width: 100%;
-  background: url(../img/random-mountains.jpg) center no-repeat #1b222a;
-  background-size: cover;
-  background-attachment: fixed;
-  color: white; }
-
-.head-quote {
-  background-color: #fff;
-  color: black;
-  margin-top: 35%;
-  margin-right: -25%;
-  float: right;
-  border-radius: 10px; }
-
-#info-plane {
-  margin-top: -25px;
-  margin-bottom: 25px;
-  padding-bottom: 15px; }
-
-.info-icon {
-  float: left;
-  margin-top: 5px;
-  padding-right: 5px;
-  color: #8fafd6; }
-
-.inform {
-  font-family: "Lato", sans-serif !important;
-  font-size: 14px !important;
-  font-style: italic !important; }
-
-.left-col {
-  margin-left: 5px;
-  vertical-align: middle; }
-
-#mountains {
-  align-content: center; }
-
-.box {
-  text-align: center;
-  border-radius: 5px;
-  background: #f2f2f2;
-  margin-left: 12%;
-  width: 370px;
-  box-shadow: -11px 13px 30px -10px black;
-  background-image: linear-gradient(to bottom right, #8ae3f1, #6df1ad); }
-
-.mount-img {
-  width: 100%;
-  height: 200px;
-  display: block;
-  margin: 0 auto; }
-
-.list-inline {
-  text-align: center; }
-
-ul.list-inline li {
-  display: inline; }
-
 #info-box {
   height: 70vh;
   width: 100%; }
@@ -109,5 +24,75 @@ input {
 
 .name {
   width: 250px; }
+
+#mountains {
+  align-content: center; }
+
+.box {
+  text-align: center;
+  border-radius: 5px;
+  background: #f2f2f2;
+  margin-left: 12%;
+  width: 370px;
+  box-shadow: -11px 13px 30px -10px black;
+  background-image: linear-gradient(to bottom right, #8ae3f1, #6df1ad); }
+
+.mount-img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin: 0 auto; }
+
+.list-inline {
+  text-align: center; }
+
+ul.list-inline li {
+  display: inline; }
+
+.header {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/random-mountains.jpg) center no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  color: white; }
+  .header__top {
+    color: white;
+    text-align: right;
+    padding-top: 10%;
+    padding-right: 5%; }
+  .header__sub {
+    font-size: 2.8rem;
+    text-align: right;
+    padding-top: 1%;
+    padding-right: 1.5%; }
+  .header__box {
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    transform: translate(0, -47%);
+    clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
+    opacity: .25; }
+
+.heading {
+  font-family: "Bungee", cursive;
+  font-size: 35px; }
+
+.navbar {
+  background-color: transparent;
+  border-bottom: none; }
+
+.nav li {
+  font-family: "Bungee", cursive;
+  font-size: 2rem; }
+
+.brand-name {
+  font-family: "Carter One", cursive;
+  font-size: 3rem;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */
