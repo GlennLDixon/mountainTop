@@ -1,3 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.header__top, .header__sub, .header__search--bar {
+  position: absolute;
+  margin-left: 60%;
+  z-index: 1; }
+
+.header__top {
+  color: white;
+  padding-top: 8%;
+  padding-left: 5%; }
+
+.header__sub {
+  font-size: 2.8rem;
+  padding-top: 16%;
+  padding-left: 9%; }
+
+span.header__bold {
+  color: #adeee2;
+  font-size: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem; }
+
 #info-box {
   height: 70vh;
   width: 100%; }
@@ -50,30 +97,38 @@ ul.list-inline li {
   display: inline; }
 
 .header {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background: url(../img/random-mountains.jpg) center no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
   color: white; }
-  .header__top {
-    color: white;
-    text-align: right;
-    padding-top: 10%;
-    padding-right: 5%; }
-  .header__sub {
-    font-size: 2.8rem;
-    text-align: right;
-    padding-top: 1%;
-    padding-right: 1.5%; }
+  .header__search--bar {
+    padding-top: 25%;
+    padding-left: 10%;
+    position: relative; }
+    .header__search--bar #search-input {
+      width: 100%;
+      margin: auto;
+      border-radius: 5px;
+      margin-right: -1px; }
+    .header__search--bar #search-input input, .header__search--bar button {
+      width: 80px;
+      height: 33px;
+      border: 2px solid white;
+      font-size: 16px;
+      top: 92.2%;
+      background: transparent;
+      display: inline-block;
+      position: absolute;
+      vertical-align: center; }
   .header__box {
     height: 100vh;
     background-color: black;
     background-size: cover;
-    position: relative;
     text-align: center;
-    transform: translate(0, -47%);
+    transform: translate(0, -70.5%);
     clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
     -webkit-clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
     opacity: .25; }

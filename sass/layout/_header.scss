@@ -1,33 +1,46 @@
 .header {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background: url(../img/random-mountains.jpg) center no-repeat;
     background-size: cover;
     background-position: top;
     position: relative;
     color: rgb(255, 255, 255);
-    
-    &__top {
-        color: white;
-        text-align: right;
-        padding-top: 10%;
-        padding-right: 5%;
+
+    &__search--bar {
+        padding-top: 25%;
+        padding-left: 10%;
+        position: relative;
+
+        #search-input {
+            width: 100%;
+            margin: auto;
+            border-radius: 5px;
+            margin-right: -1px;
         }
 
-    &__sub {
-        font-size: 2.8rem;
-        text-align: right;
-        padding-top: 1%;
-        padding-right: 1.5%;
+        #search-input input, button {
+            width: 80px;
+            height: 33px;
+            border: 2px solid white;
+            font-size: 16px;
+            top: 92.2%;
+            background: transparent;
+            display: inline-block;
+            position: absolute;
+            vertical-align: center;
+        }
+
     }
+
     
     &__box {
         height: 100vh;
         background-color: black;
         background-size: cover;
-        position: relative;
+        //position: relative;
         text-align: center;
-        transform: translate(0, -47%);
+        transform: translate(0, -70.5%);
         clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
         -webkit-clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
         opacity: .25;
