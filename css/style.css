@@ -16,6 +16,13 @@ body {
   margin-left: 60%;
   z-index: 1; }
 
+.header__slogan--box {
+  position: absolute;
+  top: 25%;
+  left: 4%; }
+  .header__slogan--box h1.header__slogan {
+    font-size: 6rem; }
+
 .header__top {
   color: white;
   padding-top: 8%;
@@ -103,7 +110,8 @@ ul.list-inline li {
   background-size: cover;
   background-position: top;
   position: relative;
-  color: white; }
+  color: white;
+  padding: 0%; }
   .header__search--bar {
     padding-top: 25%;
     padding-left: 10%;
@@ -128,7 +136,7 @@ ul.list-inline li {
     background-color: black;
     background-size: cover;
     text-align: center;
-    transform: translate(0, -70.5%);
+    transform: translate(0, -64.5%);
     clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
     -webkit-clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
     opacity: .25; }

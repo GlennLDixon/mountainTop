@@ -3,6 +3,17 @@
         margin-left: 60%;
         z-index: 1;
     }
+
+     .header__slogan--box {
+        position: absolute;
+        top: 25%;
+        left: 4%;
+        //border: 1px solid transparent;
+
+        h1.header__slogan {
+            font-size: 6rem;
+        }
+    }
     
     .header__top {
         color: white;
