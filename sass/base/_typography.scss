@@ -1,0 +1,53 @@
+ .header__top, .header__sub, .header__search--bar {
+        position: absolute;
+        margin-left: 60%;
+        z-index: 1;
+    }
+
+     .header__slogan--box {
+         position: absolute;
+         top: 25%;
+         left: 4%;
+         //border: 1px solid transparent;
+         
+         h1.header__slogan {
+             position: relative;
+             font-size: 6rem;
+             padding-top: 10px;
+             
+             span.header__quote {
+                 position: relative;
+                 background-color: black;
+                 opacity: 0.25;
+                 z-index: 1;
+                 
+                 &--1 {
+                     border-radius: 2px;
+                     margin-bottom: -10%;
+                }
+
+                &--2 {
+                    margin-top: 5%;
+                }
+
+            }
+        }
+    }
+    
+    .header__top {
+        color: white;
+        padding-top: 8%;
+        padding-left: 5%;
+        }
+
+    .header__sub {
+        font-size: 2.8rem;
+        padding-top: 16%;
+        padding-left: 9%;
+        
+    }
+            
+    span.header__bold {
+                color: $primary-color;
+                font-size: 3rem;
+            }

@@ -1,19 +1,77 @@
-div {
-  width: 100%; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: 1.5px;
-  color: #333333;
-  background-color: white;
   box-sizing: border-box; }
 
-.heading {
-  font-family: "Bungee", cursive;
-  font-size: 35px; }
+.header__top, .header__sub, .header__search--bar {
+  position: absolute;
+  margin-left: 60%;
+  z-index: 1; }
 
+.header__slogan--box {
+  position: absolute;
+  top: 25%;
+  left: 4%; }
+  .header__slogan--box h1.header__slogan {
+    position: relative;
+    font-size: 6rem;
+    padding-top: 10px; }
+    .header__slogan--box h1.header__slogan span.header__quote {
+      position: relative;
+      background-color: black;
+      opacity: 0.25;
+      z-index: 1; }
+      .header__slogan--box h1.header__slogan span.header__quote--1 {
+        border-radius: 2px;
+        margin-bottom: -10%; }
+      .header__slogan--box h1.header__slogan span.header__quote--2 {
+        margin-top: 5%; }
+
+.header__top {
+  color: white;
+  padding-top: 8%;
+  padding-left: 5%; }
+
+.header__sub {
+  font-size: 2.8rem;
+  padding-top: 16%;
+  padding-left: 9%; }
+
+span.header__bold {
+  color: #adeee2;
+  font-size: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 10rem; }
+
+#info-box {
+  height: 70vh;
+  width: 100%; }
+
+.heading {
+  text-align: center; }
+
+<<<<<<< HEAD
 .navbar {
   background-color: transparent;
   border-bottom: none;
@@ -61,6 +119,27 @@ a.brand-name.brand-name {
 .left-col {
   margin-left: 5px;
   vertical-align: middle; }
+=======
+.about-us, .safety-first {
+  border-left: 2px solid black;
+  padding-left: 5px; }
+
+.info {
+  margin-top: 20%; }
+
+.img img {
+  width: 100%; }
+
+.register-wrap {
+  margin-top: 25px; }
+
+input {
+  height: 35px;
+  margin: 10px 5px; }
+
+.name {
+  width: 250px; }
+>>>>>>> choices
 
 #mountains {
   align-content: center; }
@@ -86,31 +165,59 @@ a.brand-name.brand-name {
 ul.list-inline li {
   display: inline; }
 
-#info-box {
-  height: 70vh;
-  width: 100%; }
+.header {
+  height: 90vh;
+  width: 100%;
+  background: url(../img/random-mountains.jpg) center no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  color: white;
+  padding: 0%; }
+  .header__search--bar {
+    padding-top: 25%;
+    padding-left: 10%;
+    position: relative; }
+    .header__search--bar #search-input {
+      width: 100%;
+      margin: auto;
+      border-radius: 5px;
+      margin-right: -1px; }
+    .header__search--bar #search-input input, .header__search--bar button {
+      width: 80px;
+      height: 33px;
+      border: 2px solid white;
+      font-size: 16px;
+      top: 92.2%;
+      background: transparent;
+      display: inline-block;
+      position: absolute;
+      vertical-align: center; }
+  .header__box {
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    transform: translate(0, -64.5%);
+    clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 45% 100%, 72% 0);
+    opacity: .25; }
 
 .heading {
-  text-align: center; }
+  font-family: "Bungee", cursive;
+  font-size: 35px; }
 
-.about-us, .safety-first {
-  border-left: 2px solid black;
-  padding-left: 5px; }
+.navbar {
+  background-color: transparent;
+  border-bottom: none; }
 
-.info {
-  margin-top: 20%; }
+.nav li {
+  font-family: "Bungee", cursive;
+  font-size: 2rem; }
 
-.img img {
-  width: 100%; }
-
-.register-wrap {
-  margin-top: 25px; }
-
-input {
-  height: 35px;
-  margin: 10px 5px; }
-
-.name {
-  width: 250px; }
+.brand-name {
+  font-family: "Carter One", cursive;
+  font-size: 3rem;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

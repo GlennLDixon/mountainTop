@@ -1,0 +1,181 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/about";
+@import "components/contacts";
+@import "components/tours";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navbar";
+
+@import "pages/home";
+
+
+///////// Media Queries ///////////
+
+// @include xs {
+//     .head-quote {
+//         display: none;
+//     }
+// }
+
+// @include sm {
+    
+//     .head-quote {
+//         margin-top: 25%;
+//         margin-right: -20px;
+//         float: right;
+//     }
+    
+//     .head-quote h1 {
+//         font-family: $head-font;
+//         font-size: 1rem;
+//         text-align: center;
+//     }
+    
+//     .head-quote p {
+//         font-family: $para-font;
+//         font-size: 1rem;
+//         text-align: center;
+//         padding: 5px 5px;
+//     }
+        
+//     #mountains {
+//         text-align: center;
+//         background: $alt-color;
+//         margin-top: 15px;
+//     }
+        
+//     .mount-img {
+//         width: 375px;
+//         height: 200px;
+//         margin-top: 10px;
+//         box-shadow: -12px 13px 30px -10px black;
+//     }
+
+//     .heading {
+//         font-size: 1.7em;
+//     }
+
+//     #about-us {
+//         height: 70vh;
+//         width: 100%;
+//         // background: url(../img/transparent-mount.png) center no-repeat;
+//         // background-size: cover;
+//         // background-attachment: fixed;
+//         color: rgb(255, 255, 255);
+//     }
+// }
+
+// @include md {
+//     .head-quote {
+//         background-color: #fff;
+//         color: rgb(0, 0, 0);
+//         margin-top: 100%;
+//         margin-right: -15%;
+//         float: right;
+//         border-radius: 10px;
+//     }
+
+//     .head-quote h1 {
+//         font-family: $head-font;
+//         font-size: 2em;
+//         text-align: center;
+//     }
+    
+//     .head-quote p {
+//         font-family: $para-font;
+//         font-size: 1em;
+//         text-align: center;
+//         padding: 5px 5px;
+//     }
+
+//     #mountains {
+//         text-align: center;
+//         background: $alt-color;
+//         margin-top: 15px;
+//     }
+
+//     .mount-img {
+//         width: 450px;
+//         height: 250px;
+//         margin-top: 10px;
+//         box-shadow: -12px 13px 30px -10px black;
+//     }
+
+//     .heading {
+//         font-size: 1.7em;
+//     }
+
+//     #about-us {
+//         height: 100vh;
+//         width: 100%;
+//         // background: url(../img/transparent-mount.png) center no-repeat;
+//         // background-size: cover;
+//         // background-attachment: fixed;
+//         color: rgb(255, 255, 255);
+//     }
+// }
+
+// @include lg {
+//     .head-quote {
+//         background-color: #fff;
+//         color: rgb(0, 0, 0);
+//         margin-top: 50%;
+//         margin-right: 5%;
+//         float: right;
+//         border-radius: 10px;
+//     }
+
+//     .head-quote h1 {
+//         font-family: $head-font;
+//         font-size: 10px;
+//         text-align: center;
+//     }
+
+//     .head-quote p {
+//         font-family: $para-font;
+//         font-size: 1em;
+//         text-align: center;
+//         padding: 5px 5px;
+//     }
+// }
+
+// @include xl {
+//     .head-quote {
+//         background-color: #fff;
+//         color: rgb(0, 0, 0);
+//         margin-top: 50%;
+//         margin-right: 5%;
+//         float: right;
+//         border-radius: 10px;
+//     }
+
+//     .head-quote h1 {
+//         font-family: $head-font;
+//         font-size: 10px;
+//         text-align: center;
+//     }
+
+//     .head-quote p {
+//         font-family: $para-font;
+//         font-size: 1em;
+//         text-align: center;
+//         padding: 5px 5px;
+//     }
+// }
+
+
+
+
+
+
+
+
