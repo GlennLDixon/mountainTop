@@ -5,13 +5,32 @@
     }
 
      .header__slogan--box {
-        position: absolute;
-        top: 25%;
-        left: 4%;
-        //border: 1px solid transparent;
+         position: absolute;
+         top: 25%;
+         left: 4%;
+         //border: 1px solid transparent;
+         
+         h1.header__slogan {
+             position: relative;
+             font-size: 6rem;
+             padding-top: 10px;
+             
+             span.header__quote {
+                 position: relative;
+                 background-color: black;
+                 opacity: 0.25;
+                 z-index: 1;
+                 
+                 &--1 {
+                     border-radius: 2px;
+                     margin-bottom: -10%;
+                }
 
-        h1.header__slogan {
-            font-size: 6rem;
+                &--2 {
+                    margin-top: 5%;
+                }
+
+            }
         }
     }
     
